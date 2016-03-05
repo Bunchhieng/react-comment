@@ -96,7 +96,6 @@ app.post('/api/comments', function(req, res) {
   });
 });
 
-// webpack-dev-server will overwrite the port number to 8080
 app.listen(port, function() {
   console.log('Server started: http://localhost:' + port + '/');
 });

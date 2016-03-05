@@ -2,8 +2,10 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var moment = require('moment');
 
+// Comment component
 var Comment = React.createClass({
   rawMarkup: function() {
+    // this.props.children to access nested element as an array
     var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
     return {__html: rawMarkup};
   },
@@ -21,6 +23,7 @@ var Comment = React.createClass({
   }
 });
 
+// CommentList component
 var CommentList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function(comment) {
@@ -38,6 +41,7 @@ var CommentList = React.createClass({
   }
 });
 
+// CommentForm component
 var CommentForm = React.createClass({
   getInitialState: function() {
     return {author: '', text: ''};
