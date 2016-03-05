@@ -1,7 +1,7 @@
 Realtime comments
 ========
 A simple realtime comments application. :smile:
-![screenshot](https://github.com/Bunchhieng/raw/master/public/img/pic.png )
+![screenshot](https://raw.githubusercontent.com/Bunchhieng/react-comment/master/public/img/pic.png)
 
 Usage:
 ```
