@@ -1,5 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var moment = require('moment');
 
 var Comment = React.createClass({
   rawMarkup: function() {
@@ -9,10 +10,12 @@ var Comment = React.createClass({
   render: function() {
     return (
       <div className="container">
-        <h2 className="commentAuthor">
-        {this.props.author}
-        </h2>
+        <span className="glyphicon glyphicon-user">{this.props.author}</span>
         <span dangerouslySetInnerHTML={this.rawMarkup()} />
+        <span className="glyphicon glyphicon-thumps-up">
+          <button type="button" className="btn btn-primary">Like</button>
+          <p>{moment().startOf('hour').fromNow()}</p>
+        </span>
       </div>
     );
   }

@@ -8,6 +8,8 @@ var webpackMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
 var config = require('./webpack.config');
 
+var COMMENT_FILE = path.join(__dirname, 'comments.json');
+
 // https://github.com/christianalfoni/webpack-express-boilerplate/blob/master/server.js
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const port = isDeveloping ? 3000 : process.env.PORT;
@@ -38,8 +40,6 @@ if (isDeveloping) {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
   });
 }
-
-var COMMENT_FILE = path.join(__dirname, 'comments.json');
 
 // app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
