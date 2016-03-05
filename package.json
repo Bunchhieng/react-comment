@@ -1,0 +1,31 @@
+{
+  "name": "react-comments",
+  "version": "1.0.0",
+  "description": "Realtime comment builds using Reactjs",
+  "main": "server.js",
+  "scripts": {
+    "production": "webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Bunchhieng Soth <Bunchhieng@gmail.com> (http://www.hackbits.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "html-webpack-plugin": "^2.9.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-middleware": "^1.5.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.9.1"
+  }
+}
